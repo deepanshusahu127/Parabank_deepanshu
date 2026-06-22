@@ -1,7 +1,7 @@
 {
   "ProfileDetails": {
-    "firstname":"deepu",
-    "lastname":"sahu",
+    "firstname": "deepu",
+    "lastname": "sahu",
     "address": "New Address",
     "city": "Bhopal",
     "state": "MP",
@@ -10,6 +10,10 @@
   },
   "LoanDetails": {
     "loanAmount": "1000",
-    "downPayment": "100"
+    "downPayment": "100",
+    "LoanNotvalid": {
+      "invalidamount": "-100",
+      "downpayment": "10"
+    }
   }
 }

@@ -15,6 +15,12 @@ export type ProfileDetails = {
 export type LoanDetails = {
     loanAmount: string;
     downPayment: string;
+   
+    
+};
+type InvalidLoanDetails = {
+    invalidamount: string;
+    downpayment: string;
 };
 
 export class LoanAction {
@@ -50,6 +56,13 @@ await expect(this.loanpage.updateSuccessMsg).toBeVisible();
         await this.loanpage.loandownpayment.fill(loanprofile.downPayment)
         await this .loanpage.Applybutton.click()
         await expect(this.loanpage.loansuccesmsg).toBeVisible()
+    }
+    async invalidloan(invalidamount:InvalidLoanDetails){
+      await this.loanpage.requestloan.click()
+        await this.loanpage.loanamount.fill(invalidamount.invalidamount )
+        await this.loanpage.loandownpayment.fill(invalidamount.downpayment)
+        await this .loanpage.Applybutton.click()
+        await expect(this.loanpage.loaninvalid).toBeVisible()
     }
   
 }

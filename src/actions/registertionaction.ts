@@ -57,9 +57,9 @@ export class RegistrationAction {
         await expect(this.registrationPage.UsernameValid).toBeVisible()
         
     }
-    async invalidcredentials(blank:LoginDetails){
-        await this.registrationPage.Username.fill(blank.Username)
-        await this.registrationPage.Password.fill(blank.Password)
+    async invalidcredentials(userid:string,pass:string){
+        await this.registrationPage.Username.fill(userid)
+        await this.registrationPage.Password.fill(pass)
         await this.registrationPage.loginbtn.click()
         await expect(this.registrationPage.invalidmsg).toBeVisible();
     }

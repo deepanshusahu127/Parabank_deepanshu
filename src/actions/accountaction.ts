@@ -19,6 +19,7 @@ export class AccountAction {
     await this.accountpage.openaccount.click();
     await expect(this.accountpage.accountsucess).toBeVisible();
     const accountNumber = await this.accountpage.AccountNovalid.textContent();
+    console.log(accountNumber)
     await this.accountpage.Accountoverview.click()
     await expect(
         this.accountpage.page.locator(`//a[text()='${accountNumber?.trim()}']`)

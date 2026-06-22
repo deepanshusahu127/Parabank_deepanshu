@@ -16,6 +16,7 @@ export class LoanPage{
   readonly loandownpayment:Locator
   readonly Applybutton:Locator
   readonly loansuccesmsg:Locator
+  readonly loaninvalid:Locator
   constructor(page:Page){
     this.page=page
     this.updateContactInfo = page.locator("//a[contains(text(),'Update Contact Info')]");
@@ -37,6 +38,7 @@ this.loanamount=page.locator("//input[@id='amount']")
 this.loandownpayment=page.locator("//input[@id='downPayment']")
 this.Applybutton=page.locator("//input[@value='Apply Now']")
 this.loansuccesmsg=page.locator("//h1[text()='Loan Request Processed']")
+this.loaninvalid=page.locator("//p[text()='We cannot grant a loan in that amount with your available funds.']")
 
 
 

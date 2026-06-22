@@ -52,7 +52,7 @@ export class RegistrationPage {
          this.loginbtn=page.locator("//input[@value='Log In']")
          this.AccountService=page.locator("//h2[text()='Account Services']")
          this.UsernameValid=page.locator("//b[text()='Welcome']/parent::p")
-         this.invalidmsg=page.locator("//p[text()='Please enter a username and password.']")
+         this.invalidmsg=page.locator("//p[text()='The username and password could not be verified.']")
 
     }
 }

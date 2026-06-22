@@ -4,14 +4,14 @@ import { faker } from '@faker-js/faker';
 import { AccountAction } from '../actions/accountaction';
 import { FundAction } from '../actions/transferaction';
 import { BillAction } from '../actions/billaction';
-import { LoanAction, LoanPageAction } from '../actions/loanaction';
+import { LoanAction} from '../actions/loanaction';
 
 type Application = {
     regis: RegistrationAction;
     account:AccountAction;
     fund:FundAction;
     bill:BillAction;
-    loan:LoanPageAction
+    loan:LoanAction
 };
 
 type RandomUser = {
