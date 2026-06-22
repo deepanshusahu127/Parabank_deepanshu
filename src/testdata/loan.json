@@ -1,0 +1,15 @@
+{
+  "ProfileDetails": {
+    "firstname":"deepu",
+    "lastname":"sahu",
+    "address": "New Address",
+    "city": "Bhopal",
+    "state": "MP",
+    "zipCode": "462001",
+    "phoneNumber": "9876543210"
+  },
+  "LoanDetails": {
+    "loanAmount": "1000",
+    "downPayment": "100"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "baseURL": "https://parabank.parasoft.com/parabank/index.htm",
+  "RegisterDetails": {
+    "firstName": "Deepanshu1234",
+    "lastName": "Sahu",
+    "address": "123 Main Street",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "zipCode": "380001",
+    "phoneNumber": "9876543210",
+    "ssn": "123456789"
+
+    
+  },
+  
+
+  "BlankCredentials": {
+    "username": " ",
+    "password": " "
+  }
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "BillPayDetails": {
+    "payeeName": "Deepanshu Sahu",
+    "address": "123 Main Street",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "zipCode": "462001",
+    "phoneNumber": "9876543210",
+    "accountNumber": "12345678",
+    "verifyAccountNumber": "12345678",
+    "amount": "100"
+  }
+}
