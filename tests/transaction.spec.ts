@@ -3,8 +3,8 @@ import register from "../src/testdata/register.json"
 import funddata from "../src/testdata/fund.json"
 import loantest from "../src/testdata/loan.json"
 
-
-test.only('Open New Account and Verify Account Creation', async ({ page, appaction }) => {
+//three other TestCases are here
+test('Open New Account and Verify Account Creation', async ({ page, appaction }) => {
   await page.goto(register.baseURL)
 
   await appaction.regis.registerUser(register.RegisterDetails)
