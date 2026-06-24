@@ -13,10 +13,10 @@ export type RegisterDetails = {
     ssn: string;
 
 };
-export type LoginDetails={
-    Username:string;
-    Password:string;
-}
+// export type LoginDetails={
+//     Username:string;
+//     Password:string;
+// }
 
 export class RegistrationAction {
       
@@ -38,6 +38,7 @@ export class RegistrationAction {
         await this.registrationPage.phoneNumber.fill(registerData.phoneNumber);
         await this.registrationPage.ssn.fill(registerData.ssn);
         await this.registrationPage.username.fill(userdata.username);
+        console.log(userdata.username)
         await this.registrationPage.password.fill(userdata.password);
         await this.registrationPage.confirmPassword.fill(userdata.password);
 
@@ -49,8 +50,9 @@ export class RegistrationAction {
     async logout(){
         await this.registrationPage.Logout.click()
     }
-    async loginValidaion(logindetails:LoginDetails){
+    async loginValidaion(){
       await   this.registrationPage.Username.fill(userdata.username)
+      console.log(userdata.username)
       await   this.registrationPage.Password.fill(userdata.password)
       await   this.registrationPage.loginbtn.click()
         await expect(this.registrationPage.AccountService).toBeVisible()
